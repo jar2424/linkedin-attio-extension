@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+**/__MACOSX
+
+# Editor
+*.swp
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Secrets (never commit real keys)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log

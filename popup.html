@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <!-- ── MAIN VIEW ─────────────────────────────────────── -->
+  <div id="main-view">
+
+    <header>
+      <span class="logo">Attio</span>
+      <button id="settings-btn" title="Settings">⚙</button>
+    </header>
+
+    <!-- Shown when not on a LinkedIn /in/ page -->
+    <div id="not-linkedin" class="hidden panel">
+      <p>Open a LinkedIn profile page to use this extension.</p>
+    </div>
+
+    <!-- Shown while waiting for data or API calls -->
+    <div id="loading" class="hidden panel">
+      <div class="spinner"></div>
+      <p>Loading…</p>
+    </div>
+
+    <!-- Shown when the API key is missing -->
+    <div id="no-api-key" class="hidden panel">
+      <p>No API key set. Click ⚙ to add your Attio API key.</p>
+    </div>
+
+    <!-- Main content when on a LinkedIn profile -->
+    <div id="profile-view" class="hidden">
+
+      <!-- Profile card -->
+      <div class="profile-card">
+        <div class="profile-name" id="profile-name"></div>
+        <div class="profile-headline" id="profile-headline"></div>
+        <div class="profile-url" id="profile-url"></div>
+      </div>
+
+      <!-- Attio status badge -->
+      <div id="attio-status" class="hidden">
+        <span id="status-badge"></span>
+        <a id="attio-link" href="#" target="_blank" class="hidden">View in Attio ↗</a>
+      </div>
+
+      <!-- Error message -->
+      <div id="error-msg" class="hidden error-box"></div>
+
+      <!-- Add section — only shown when person does NOT exist yet -->
+      <div id="add-section" class="hidden">
+        <label for="pipeline-select">Add to pipeline (optional)</label>
+        <select id="pipeline-select">
+          <option value="">— No pipeline, CRM only —</option>
+        </select>
+        <button id="add-btn" class="primary-btn">Add to Attio</button>
+      </div>
+
+      <!-- Success message -->
+      <div id="success-msg" class="hidden success-box"></div>
+
+    </div>
+
+  </div>
+
+  <!-- ── SETTINGS VIEW ──────────────────────────────────── -->
+  <div id="settings-view" class="hidden">
+
+    <header>
+      <span class="logo">Settings</span>
+      <button id="back-btn" title="Back">✕</button>
+    </header>
+
+    <div class="settings-body">
+      <label for="api-key-input">Attio API Key</label>
+      <input
+        type="password"
+        id="api-key-input"
+        placeholder="paste your key here…"
+        autocomplete="off"
+      />
+      <p class="hint">
+        Generate a key in Attio → Settings → API → Create token.<br/>
+        Required scopes: <strong>record_permission:read-write</strong>,
+        <strong>list_entry:read-write</strong>,
+        <strong>object_configuration:read</strong>,
+        <strong>list_configuration:read</strong>.
+      </p>
+      <button id="save-btn" class="primary-btn">Save</button>
+      <div id="save-status" class="hidden"></div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
