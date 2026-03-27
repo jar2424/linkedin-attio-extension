@@ -8,10 +8,9 @@
 Chrome extension that sends **LinkedIn profile pages** straight into [**Attio**](https://attio.com): check for duplicates, create people records, and optionally drop them onto a **list / pipeline** — without leaving LinkedIn.
 
 <p align="center">
-  <sub>Add a hero screenshot: place <code>docs/screenshot.png</code> in this repo and uncomment the image line below.</sub>
+  <img src="docs/demopic.png" alt="LinkedIn profile with the Attio extension popup — duplicate check and optional pipeline" width="720" />
 </p>
-
-<!-- ![LinkedIn profile with the extension popup](docs/screenshot.png) -->
+<p align="center"><sub>Demo: profile preview, “Already in Attio” status, and optional pipeline.</sub></p>
 
 ## Features
 
