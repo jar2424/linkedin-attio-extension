@@ -20,7 +20,6 @@ Chrome extension that sends **LinkedIn profile pages** straight into [**Attio**]
 ## Privacy & security
 
 - **No API key is bundled in the code.** You paste your Attio API token once in the extension settings; it is stored locally in your browser profile.  
-- Do **not** commit real tokens, `.env` files with secrets, or screenshots that show your key in plain text.  
 - If you ever shared a key by mistake, **revoke it** in Attio and create a new one.
 
 ## Requirements
