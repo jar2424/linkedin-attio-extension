@@ -1,9 +1,6 @@
 # LinkedIn → Attio
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Chrome-Manifest%20V3-4285F4?logo=googlechrome&logoColor=white" alt="Chrome Manifest V3" />
-  <img src="https://img.shields.io/badge/Attio-REST%20API-111111" alt="Attio REST API" />
-</p>
+<p><sub>Chrome extension · Manifest V3 · uses the Attio REST API</sub></p>
 
 Chrome extension that sends **LinkedIn profile pages** straight into [**Attio**](https://attio.com): check for duplicates, create people records, and optionally drop them onto a **list / pipeline** — without leaving LinkedIn.
 
